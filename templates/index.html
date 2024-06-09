@@ -63,8 +63,16 @@
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="{% url 'index' %}">Home</a></li>
                         <li><a href="{% url 'doctors' %}">Doctors & Therapists</a></li>
+<<<<<<< Updated upstream
                         <li><a href="{% url 'chatbot' %}">EWP mega</a></li>
                         <li><a href="{% url 'departments' %}">Take an Appointment</a></li>
+=======
+                        <li><a href="">EWP mega</a></li>
+                        <li><a href="{% url 'departments' %}">Appointment</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a href="{% url 'logout' %}">logout</a></li>
+                        {% else %}
+>>>>>>> Stashed changes
                         <li class="menu-has-children"><a href="">login</a>
                             <ul>
                                 <li><a href="{% url 'login' %}">login</a></li>
